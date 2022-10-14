@@ -9,7 +9,7 @@ class Rsspls < Formula
   on_macos do
     if Hardware::CPU.intel? || Hardware::CPU.arm?
       url "https://releases.wezm.net/rsspls/#{version}/rsspls-#{version}-universal-apple-darwin.tar.gz"
-      sha256 "3898ac570855b932217eddb7b6a50aa2eac31138043db0a92a9d5f1467568bca"
+      sha256 "6800be3c157218c887f0ee3fbc388c2cd13407922f3af8608a796b188f5c9c59"
 
       def install
         bin.install "rsspls"
@@ -20,7 +20,7 @@ class Rsspls < Formula
   on_linux do
     if Hardware::CPU.intel?
       url "https://releases.wezm.net/rsspls/#{version}/rsspls-#{version}-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "20e7fce366f72f02b12f380a119814a6e208684d855f5c32868528b61f31137e"
+      sha256 "7be304ef7bdd85f45faa16000cea8f2e212cb4c8ac873c3ad804999e183af474"
 
       def install
         bin.install "rsspls"
