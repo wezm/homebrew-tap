@@ -4,12 +4,12 @@
 class Rsspls < Formula
   desc "Generate RSS feeds from web pages"
   homepage "https://github.com/wezm/rsspls"
-  version "0.4.1"
+  version "0.5.0"
 
   on_macos do
     if Hardware::CPU.intel? || Hardware::CPU.arm?
       url "https://releases.wezm.net/rsspls/#{version}/rsspls-#{version}-universal-apple-darwin.tar.gz"
-      sha256 "6800be3c157218c887f0ee3fbc388c2cd13407922f3af8608a796b188f5c9c59"
+      sha256 "b8992e9880eb423813284c7be46e7af575a0a400fc9fcb9fac4776a78c9e8976"
 
       def install
         bin.install "rsspls"
@@ -20,7 +20,7 @@ class Rsspls < Formula
   on_linux do
     if Hardware::CPU.intel?
       url "https://releases.wezm.net/rsspls/#{version}/rsspls-#{version}-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "7be304ef7bdd85f45faa16000cea8f2e212cb4c8ac873c3ad804999e183af474"
+      sha256 "edea2499b09f8e9953ffaa7003f536a274adbc103fdb8689b48e7b15d8572953"
 
       def install
         bin.install "rsspls"
